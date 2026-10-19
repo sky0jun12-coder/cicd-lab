@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: todo-prod
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/sky0jun12-coder/cicd-lab.git
+    targetRevision: main
+    path: deploy/overlays/prod
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: todo-prod
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
