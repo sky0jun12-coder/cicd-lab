@@ -11,4 +11,4 @@ images:
   newTag: jenkins-4
 - name: todo-web
   newName: ghcr.io/sky0jun12-coder/cicd-lab/web
-  newTag: cfa284c5c48797495063f58550fc303d033f5e0c
+  newTag: 7b5a3dda929bce245be9246a727a4b3444e0c762
